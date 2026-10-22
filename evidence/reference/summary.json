@@ -1,0 +1,19 @@
+{
+  "cache_hits": 8,
+  "fresh_final_replay": true,
+  "minimality_scope": "single-event deletion plus transitive dependent pruning; not global minimum",
+  "minimality_verified": true,
+  "oracle_calls": 124,
+  "original_count": 100,
+  "original_sha256": "da5e0bde1f319096908ea57fb488aa7a405e679bd82ce60b33478d68a9ccc126",
+  "reduced_count": 4,
+  "reduced_sha256": "b412921c084595751128b0d3d25a81a7fb73557662587db4f070f5def8fe7bf0",
+  "retained_ids": [
+    "account-open",
+    "payment-first",
+    "payment-retry",
+    "balance-audit"
+  ],
+  "status": "complete",
+  "target_signature": "duplicate-payment-overcredit"
+}

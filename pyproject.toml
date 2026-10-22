@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "failshrink"
+version = "0.1.0"
+description = "Dependency-aware failure-preserving reduction for ordered JSON event traces"
+requires-python = ">=3.12"
+readme = "README.md"
+license = "MIT"
+authors = [{name = "Soham Jindal"}]
+dependencies = []
+
+[project.scripts]
+failshrink = "failshrink.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["failshrink*"]
+
+[tool.black]
+line-length = 100

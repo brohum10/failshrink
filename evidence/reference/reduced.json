@@ -1,0 +1,38 @@
+{
+  "events": [
+    {
+      "account": "demo",
+      "id": "account-open",
+      "op": "open"
+    },
+    {
+      "account": "demo",
+      "amount": 100,
+      "id": "payment-first",
+      "op": "credit",
+      "payment": "payment-42",
+      "requires": [
+        "account-open"
+      ]
+    },
+    {
+      "account": "demo",
+      "amount": 100,
+      "id": "payment-retry",
+      "op": "credit",
+      "payment": "payment-42",
+      "requires": [
+        "payment-first"
+      ]
+    },
+    {
+      "account": "demo",
+      "id": "balance-audit",
+      "op": "audit",
+      "requires": [
+        "payment-retry"
+      ]
+    }
+  ],
+  "version": 1
+}
